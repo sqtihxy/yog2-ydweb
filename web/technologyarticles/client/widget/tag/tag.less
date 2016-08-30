@@ -1,0 +1,54 @@
+.tech-widget-tag{
+	position: relative;
+	padding-right: 90px;
+	font-size: 0px;
+	&:after{
+		display: block;
+		content: '';
+		font-size: 0;
+		height: 0;
+		clear: both;
+		visibility: none;
+	}
+	a{
+		padding: 10px 15px;
+		color: #333;
+		text-decoration: none;
+		font-size: 16px;
+
+	}
+	.tag-list{
+		float: left;
+		a{
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			background-color: #f3f1f1;	
+			&:hover{
+				background-color: #e2e2e2;
+			}	
+		}
+		&.default{
+			height: 36px; 
+			overflow: hidden;
+		}
+		&.active{
+			height: auto;
+			overflow: auto;
+		}
+	}
+	
+	.more{
+		position: absolute; right: 0; display: inline-block;
+		background-color: #e2e2e2;
+		i{
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin-left: 5px;
+			border-width: 8px 8px 0;
+			border-color: #333 #e2e2e2 #e2e2e2 #e2e2e2;
+			border-style: solid;
+		}
+	}
+}

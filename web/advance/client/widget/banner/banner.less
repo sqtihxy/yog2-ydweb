@@ -1,0 +1,171 @@
+// .common-widget-header,.common-widget-footer{display:none;}
+// 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+.advance-focus-banner{
+    background: url(../../static/images/bg.jpg) center top no-repeat;
+    .layout{
+        color: #fff;
+        width: 1215px;
+        height: 668px;
+        margin: 0 auto;
+        font-family: '-apple-sysstem', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'Heiti SC',sans-serif;
+        text-align: center;
+        .c-title{
+            padding-top: 100px;
+            font-size: 72px;
+            margin:0;
+            color: #ffea00;
+            font-weight: 600;
+        }
+        .c-info{
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .c-statics{
+            position: relative;
+            margin-top: 84px;
+            &:before{
+                content: '';
+                width: 140px;
+                height: 3px;
+                position: absolute;
+                left:50%;
+                top: -42px;
+                margin-left: -70px;
+                background-color: rgba(255,255,255,0.4);
+            }
+            .item{
+                display: inline-block;
+                position: relative;
+                .text{
+                    font-size: 28px;
+                    line-height: 32px;
+                    padding: 0 30px;
+                }
+                &:before{
+                    content: '';
+                    border-left: 2px solid #fff;
+                    width: 2px;
+                    height: 26px;
+                    position: absolute;
+                    right: 0;
+                    top: 3px;
+                }
+                &:last-child{
+                    &:before{
+                        border-left: none;
+                    }
+                }
+            }
+        }
+        .c-button{
+            margin-top: 60px;
+            .btn{
+                display: inline-block;
+                border: 3px solid rgb(205, 223, 253);
+                border-radius: 2px;
+                width: 242px;
+                height: 80px;
+                line-height: 80px;
+                font-size: 40px;
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    border-color: #ffea00;
+                    color: #ffea00;
+                }
+            }
+        }
+    }
+}

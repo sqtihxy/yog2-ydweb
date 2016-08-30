@@ -1,0 +1,48 @@
+@the-width:100%;
+@input-width: 430;
+@input-height: 62px;
+@icon-size: 28px;
+@border: 1px solid #cdcdcd;
+@icon-color: #d9d9d9;
+.useinput {
+    position: relative;
+    width: @the-width;
+    border: @border;
+    border-radius: 2px;
+    font-size: 0;
+    margin-top: 32px;
+    box-sizing: border-box;
+    .inputfont {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        box-sizing: border-box;
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: @icon-size;
+            line-height: @icon-size;
+            margin-top: 17px;
+            border-right: @border;
+            text-align: center;
+            font-style: normal;
+            color: @icon-color;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+            display: inline-block;
+            width: @input-height;
+            box-sizing: border-box;
+        }
+    }
+    input {
+        height: @input-height;
+        width: 360px;
+        border: none;
+        outline: medium;
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+}
+

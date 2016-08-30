@@ -1,0 +1,106 @@
+.excellentCourse-widget-right{
+	width:900px;
+	float: right;
+	.widget-right-box{
+		cursor: pointer;
+		display: inline-block;
+		width: 434px;
+		height: 358px;
+		position: relative;
+		font-family: "Microsoft YaHei";
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+		box-sizing:border-box;
+		margin-bottom: 30px;
+		&:hover{
+			.widget-right-box-p{
+				opacity: 0;
+			}
+			.widget-right-box-jies{
+				opacity: 1;
+			}
+		}
+		.widget-right-box-p{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			line-height: 3;
+			font-size: 18px;
+			background: rgba(76,74,78,0.65);
+			color: #fff;
+			margin:0;
+			text-indent: 2em;
+		}
+		.widget-right-box-jies{
+			opacity: 0;
+			position: absolute;
+			-moz-box-sizing:border-box; /* Firefox */
+			-webkit-box-sizing:border-box; /* Safari */
+			box-sizing:border-box;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(76,74,78,0.65);
+			color: #fff;
+			padding-top: 44px;
+			text-align: center;
+			line-height: 1.8;
+			h1{
+				font-weight: normal;
+				font-size: 18px;
+				text-align: left;
+				padding:0 37px 0 26px;
+			}
+			p{
+				font-size:14px;
+				text-align: left;
+				padding:0 37px 0 26px;
+			}
+			a{
+				background: #ff2f19;
+				width: 186px;
+				height: 50px;
+				line-height: 50px;
+				border-radius: 25px;
+				display: inline-block;
+				color: #fff;
+				text-decoration: none;
+				font-size: 22px;
+				margin-top: 10px;
+			}
+		}
+	}
+	.widget-right-box:nth-child(2n+1){
+		margin-right: 24px;
+	}
+}
+.excellentCourse-widget-right-page{
+	font-family: "Microsoft YaHei";
+	a{
+		display: inline-block;
+		background: #f0f0f0;
+		border-radius: 5px;
+		border:1px solid #e0dfdf;
+		color:#666666;
+		text-decoration: none;
+		width: 42px;
+		height: 42px;
+		line-height: 42px;
+		text-align: center;
+		font-size: 16px;
+		margin:0 10px;
+		&:hover{
+			background: #fd822a;
+			color:#fff;
+			border:1px solid #f37215;
+		}
+	}
+	a.now{
+		background: #fd822a;
+		color:#fff;
+		border:1px solid #f37215;
+	}
+
+}
